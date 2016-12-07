@@ -6,6 +6,43 @@
     android:orientation="vertical"
     tools:context="com.example.kila0.project.MainPage">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="27">
 
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <RadioButton
+            android:id="@+id/bottom_tabbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="1"/>
+        <RadioButton
+            android:id="@+id/bottom_tabbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="2"/>
+        <RadioButton
+            android:id="@+id/bottom_tabbar_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="3"/>
+    </RadioGroup>
 
 </LinearLayout>
