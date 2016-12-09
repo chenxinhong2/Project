@@ -11,6 +11,8 @@ public class MainPage extends AppCompatActivity {
         setContentView(R.layout.activity_main_page);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);
         TabLayout.Tab tab1 = tabLayout.newTab().setText("类别");
         tabLayout.addTab(tab1);
         TabLayout.Tab tab2 = tabLayout.newTab().setText("主页");
