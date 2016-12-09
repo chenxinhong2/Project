@@ -14,7 +14,7 @@ public class MainPage extends AppCompatActivity {
         TabLayout.Tab tab1 = tabLayout.newTab().setText("类别");
         tabLayout.addTab(tab1);
         TabLayout.Tab tab2 = tabLayout.newTab().setText("主页");
-        tabLayout.addTab(tab2,2,true);
+        tabLayout.addTab(tab2);
         TabLayout.Tab tab3 = tabLayout.newTab().setText("添加");
         tabLayout.addTab(tab3);
     }
