@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="bangbang">BangBang</string>
+    <string name="searchhint">请输入搜索内容</string>
+    <string name="login">登录</string>
+    <string name="menu">个人</string>
 </resources>
