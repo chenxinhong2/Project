@@ -8,14 +8,14 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_page);
+        setContentView(R.layout.activity_showtask_page);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+      /*  TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         TabLayout.Tab tab1 = tabLayout.newTab().setText("类别");
         tabLayout.addTab(tab1);
         TabLayout.Tab tab2 = tabLayout.newTab().setText("主页");
         tabLayout.addTab(tab2,2,true);
         TabLayout.Tab tab3 = tabLayout.newTab().setText("添加");
-        tabLayout.addTab(tab3);
+        tabLayout.addTab(tab3);*/
     }
 }
