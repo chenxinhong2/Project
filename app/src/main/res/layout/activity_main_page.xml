@@ -60,8 +60,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:scrollbarSize="30dp"
-        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorHeight="5dp"
         app:tabSelectedTextColor="@color/green1"
+        app:tabIndicatorColor="@color/green3"
         app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
     <!--<RadioGroup-->
