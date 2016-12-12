@@ -38,10 +38,10 @@ public class MainPage extends AppCompatActivity {
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-//                int pos = tab.getPosition();
-//                if(pos==0)      tab.setIcon(R.mipmap.menu_green);
-//                else if(pos==1)     tab.setIcon(R.mipmap.home_green);
-//                else    tab.setIcon(R.mipmap.search_green);
+                int pos = tab.getPosition();
+                if(pos==0)      tab.setIcon(R.mipmap.menu_green);
+                else if(pos==1)     tab.setIcon(R.mipmap.home_green);
+                else    tab.setIcon(R.mipmap.search_green);
             }
         });
     }
