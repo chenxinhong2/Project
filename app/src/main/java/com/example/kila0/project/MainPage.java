@@ -8,8 +8,9 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_page);
+        setContentView(R.layout.activity_add_page);
 
+        /*
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
@@ -19,5 +20,6 @@ public class MainPage extends AppCompatActivity {
         tabLayout.addTab(tab2);
         TabLayout.Tab tab3 = tabLayout.newTab().setText("添加");
         tabLayout.addTab(tab3);
+        */
     }
 }
