@@ -30,9 +30,10 @@
             android:textSize="18sp"
             android:textAllCaps="false"/>
     </RelativeLayout>
+
     <EditText
         android:id="@+id/searchinput"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_margin="10dp"
         android:layout_below="@+id/topbar"
@@ -43,6 +44,13 @@
         android:paddingStart="20dp"
         android:hint="@string/searchhint"
         android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/searchinput"
+        android:layout_alignBottom="@+id/searchinput"
+        android:text="搜索"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -62,39 +70,6 @@
         android:scrollbarSize="30dp"
         app:tabIndicatorHeight="5dp"
         app:tabSelectedTextColor="@color/green1"
-        app:tabIndicatorColor="@color/green3"
-        app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
-
-    <!--<RadioGroup-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:layout_weight="1">-->
-        <!--<RadioButton-->
-            <!--android:id="@+id/bottom_tabbar_1"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:button="@android:color/transparent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="1"/>-->
-        <!--<RadioButton-->
-            <!--android:id="@+id/bottom_tabbar_2"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:button="@android:color/transparent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="2"/>-->
-        <!--<RadioButton-->
-            <!--android:id="@+id/bottom_tabbar_3"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:button="@android:color/transparent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="3"/>-->
-    <!--</RadioGroup>-->
+        app:tabIndicatorColor="@color/green3"/>
 
 </RelativeLayout>
