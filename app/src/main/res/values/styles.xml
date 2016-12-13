@@ -38,4 +38,31 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
+    <!-- NoTitleBar application theme. -->
+    <style name="my_No_actionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- full screen -->
+    <style name="my_FullScreen"  parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--transport-->
+    <style name="my_transport" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--active时edittext底线颜色设置为白色-->
+        <item name="android:colorControlActivated">#ffffff</item>
+        <!--normal时edittext底线颜色设置为淡绿-->
+        <item name="android:colorControlNormal">#98fb98</item>
+    </style>
 </resources>
