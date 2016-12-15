@@ -18,7 +18,7 @@
         android:id="@+id/received_item_type"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:text="快递"
+        android:text="帮买泡面"
         android:textSize="22dp"
         />
     <TextView
@@ -46,6 +46,6 @@
         android:layout_alignBottom="@id/received_item_details"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:src="@mipmap/icon"/>
+        android:src="@mipmap/noodle"/>
 
 </RelativeLayout>
