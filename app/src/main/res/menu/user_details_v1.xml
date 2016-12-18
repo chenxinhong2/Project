@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个是主页面的右上角的那个按钮 点击会就出现退出当前用户的选项-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="退出当前用户"
+        app:showAsAction="never" />
+</menu>

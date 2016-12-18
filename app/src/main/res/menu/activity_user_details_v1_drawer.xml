@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个是侧边栏的菜单 也就是下面点击的各个项目-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/user_name_item"
+            android:icon="@mipmap/user_name"
+            android:title="陈欣鸿" />
+        <item
+            android:id="@+id/user_school_item"
+            android:icon="@mipmap/school"
+            android:title="中山大学" />
+        <item
+            android:id="@+id/user_department_item"
+            android:icon="@mipmap/department"
+            android:title="数据院" />
+        <item
+            android:id="@+id/user_phone_item"
+            android:icon="@mipmap/phone"
+            android:title="15919159191" />
+        <item
+            android:id="@+id/user_qq_item"
+            android:icon="@mipmap/qq"
+            android:title="530530530" />
+        <item
+            android:id="@+id/user_wechat_item"
+            android:icon="@mipmap/wechat"
+            android:title="chenxh96" />
+
+
+    <item android:title="任务信息">
+        <menu>
+            <item
+                android:id="@+id/sent_task_item"
+                android:icon="@mipmap/sent_task"
+                android:title="已发任务" />
+            <item
+                android:id="@+id/received_task_item"
+                android:icon="@mipmap/received_task"
+                android:title="已接任务" />
+        </menu>
+    </item>
+
+</menu>

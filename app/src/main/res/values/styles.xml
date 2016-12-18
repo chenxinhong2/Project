@@ -48,7 +48,7 @@
     </style>
 
     <!-- full screen -->
-    <style name="my_FullScreen"  parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="my_FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -65,4 +65,28 @@
         <!--normal时edittext底线颜色设置为淡绿-->
         <item name="android:colorControlNormal">#98fb98</item>
     </style>
+
+    <style name="my_transport_2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="my_transport_3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--active时edittext底线颜色设置为淡绿-->
+        <item name="android:colorControlActivated">@color/green1</item>
+        <!--normal时edittext底线颜色设置为灰色-->
+        <item name="android:colorControlNormal">#e1e1e1</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

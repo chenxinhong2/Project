@@ -7,20 +7,10 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="265dp"
         android:orientation="vertical"
         android:background="@mipmap/user_background1">
-        <Button
-            android:layout_width="38dp"
-            android:layout_height="25dp"
-            android:layout_gravity="right"
-            android:gravity="center"
-            android:background="#e0000000"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="23dp"
-            android:textColor="#ffffff"
-            android:text="编辑"
-            android:textSize="15dp"/>
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -38,28 +28,60 @@
             android:text="chenxinghong"
             android:textColor="#ffffff"
             android:textSize="45dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:layout_marginTop="1dp"
-            android:id="@+id/user_signature"
-            android:text="我为人人人人为我"
-            android:textColor="#ffffff"
-            android:textSize="16dp"/>
+
     </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lightgrey"></LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="80dp">
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/user_name"
+            android:id="@+id/user_img"
+            android:layout_marginTop="22dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="18dp"
+            android:id="@+id/xingming"
+            android:textColor="@color/dimgrey"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/user_img"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@id/user_img"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陈欣鸿"
+            android:textSize="18dp"
+            android:id="@+id/this_user_name"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/xingming"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/school"
+            android:id="@+id/school_img"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/user_img"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,18 +89,37 @@
             android:textSize="18dp"
             android:id="@+id/user_school"
             android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/xingming"
+            android:layout_toRightOf="@id/school_img"
+            android:layout_alignBottom="@id/school_img"
+            android:layout_alignTop="@id/school_img"
+            android:layout_alignLeft="@id/xingming"
             />
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="中山大学"
             android:textSize="18dp"
             android:id="@+id/this_user_school"
             android:textColor="#000000"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="4dp"
             android:layout_toRightOf="@id/user_school"
-            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/this_user_name"
+            android:layout_alignLeft="@id/this_user_name"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/department"
+            android:id="@+id/department_img"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/school_img"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -87,114 +128,158 @@
             android:textSize="18dp"
             android:id="@+id/user_department"
             android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
             android:layout_below="@id/user_school"
+            android:layout_toRightOf="@id/department_img"
+            android:layout_alignBottom="@id/department_img"
+            android:layout_alignTop="@id/department_img"
+
+            android:layout_alignLeft="@id/user_school"
             />
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="数据院"
             android:textSize="18dp"
             android:id="@+id/this_user_department"
             android:textColor="#000000"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/this_user_school"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/user_school"
+
+            android:layout_marginTop="0dp"
             android:layout_alignLeft="@id/this_user_school"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/this_user_school"
             />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="姓名"
-            android:textSize="18dp"
-            android:id="@+id/user_realname"
-            android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/user_department"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="陈欣鸿"
-            android:textSize="18dp"
-            android:id="@+id/this_user_realname"
-            android:textColor="#000000"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/this_user_department"
-            android:layout_alignLeft="@id/this_user_department"
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/phone"
+            android:id="@+id/phone_img"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/department_img"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="手机"
             android:textSize="18dp"
-            android:id="@+id/user_number"
+            android:id="@+id/user_phone"
             android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/user_realname"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/user_department"
+            android:layout_toRightOf="@id/phone_img"
+            android:layout_alignBottom="@id/phone_img"
+            android:layout_alignTop="@id/phone_img"
+
+            android:layout_alignLeft="@id/user_department"
             />
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="15919159191"
+            android:text="15919153834"
             android:textSize="18dp"
-            android:id="@+id/this_user_number"
+            android:id="@+id/this_user_phome"
             android:textColor="#000000"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/this_user_realname"
-            android:layout_alignLeft="@id/this_user_realname"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/user_department"
+            android:layout_alignLeft="@id/this_user_department"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/this_user_department"
             />
+
+        <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/qq2"
+        android:id="@+id/qq_img"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/phone_img"
+        />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="微信号"
-            android:textSize="18dp"
-            android:id="@+id/user_wechat"
-            android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/user_number"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="chenxh96"
-            android:textSize="18dp"
-            android:id="@+id/this_user_wechat"
-            android:textColor="#000000"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/this_user_number"
-            android:layout_alignLeft="@id/this_user_number"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="QQ"
+            android:text=" QQ"
             android:textSize="18dp"
             android:id="@+id/user_qq"
             android:textColor="@color/dimgrey"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/user_wechat"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/user_phone"
+            android:layout_toRightOf="@id/qq_img"
+            android:layout_alignBottom="@id/qq_img"
+            android:layout_alignTop="@id/qq_img"
+            android:layout_alignLeft="@id/user_phone"
             />
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="530530530"
             android:textSize="18dp"
             android:id="@+id/this_user_qq"
             android:textColor="#000000"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@id/this_user_wechat"
-            android:layout_alignLeft="@id/this_user_wechat"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/user_phone"
+            android:layout_alignLeft="@id/this_user_phome"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/this_user_phome"
             />
 
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/wechat2"
+            android:id="@+id/wechat_img"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/qq_img"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:textSize="18dp"
+            android:id="@+id/user_wechat"
+            android:textColor="@color/dimgrey"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/user_qq"
+            android:layout_toRightOf="@id/wechat_img"
+            android:layout_alignBottom="@id/wechat_img"
+            android:layout_alignTop="@id/wechat_img"
+            android:layout_alignLeft="@id/user_qq"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cxh96"
+            android:textSize="18dp"
+            android:id="@+id/this_user_wechat"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/user_qq"
+            android:layout_alignLeft="@id/this_user_qq"
+            android:paddingLeft="18dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/this_user_qq"
+            />
     </RelativeLayout>
+
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/lightgrey"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"></LinearLayout>
+        android:layout_marginRight="10dp">
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -203,25 +288,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:text="已接任务"
+            android:layout_marginTop="18dp"
+            android:text="放弃修改"
             android:background="@drawable/button_background"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:textColor="@color/my_grey"
             android:gravity="center"
             android:id="@+id/received_button"
-            android:layout_marginLeft="80dp"/>
+            android:paddingLeft="68dp"
+            android:paddingRight="55dp"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="28dp"
+            android:background="@color/lightgrey"
+   ></LinearLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="已发任务"
+            android:layout_marginTop="18dp"
+            android:text="保存修改"
             android:background="@drawable/button_background"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:textColor="@color/my_grey"
             android:id="@+id/sent_button"
-            android:layout_marginLeft="25dp"/>
+            android:paddingLeft="55dp"
+            />
     </LinearLayout>
 </LinearLayout>

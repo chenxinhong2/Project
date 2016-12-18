@@ -23,6 +23,7 @@ public class sent_task extends AppCompatActivity {
             firstChildAtDecorView.addView(statusView, 0, statusViewLp);
         }
 
+
     }
     //把状态栏颜色变成绿色
     private int getStatusBarHeight() {

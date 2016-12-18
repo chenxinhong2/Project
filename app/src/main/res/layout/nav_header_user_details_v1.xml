@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个是侧边栏的头部 就是背景和名字那里-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:background="@mipmap/user_background1"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/user_image_v1"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icecream"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/user_name_v1"
+        android:text="chenxinghong"
+        android:textSize="23dp"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>

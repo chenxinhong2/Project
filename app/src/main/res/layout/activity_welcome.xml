@@ -49,7 +49,6 @@
     </RelativeLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Copyright ©team3 2016 BANGBANG"
+            android:text="©2016 BANGBANG designed by"
             android:textColor="@color/my_grey"
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"

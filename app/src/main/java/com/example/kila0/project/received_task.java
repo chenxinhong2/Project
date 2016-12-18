@@ -2,8 +2,8 @@ package com.example.kila0.project;
 
 import android.graphics.Color;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -22,6 +22,9 @@ public class received_task extends AppCompatActivity {
             statusView.setBackgroundColor(Color.rgb(50,206,50));
             firstChildAtDecorView.addView(statusView, 0, statusViewLp);
         }
+
+        //绑定listview
+
 
     }
     //把状态栏颜色变成绿色
