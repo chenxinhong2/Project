@@ -11,37 +11,30 @@
         <activity
             android:name=".MainPage"
             android:launchMode="singleInstance"
-            android:theme="@style/my_Notitlebar">
-
-        </activity>
-
+            android:theme="@style/my_Notitlebar"></activity>
         <activity
             android:name=".Welcome"
-            android:theme="@style/my_FullScreen"
-            android:launchMode="singleInstance">
+            android:launchMode="singleInstance"
+            android:theme="@style/my_FullScreen"></activity>
+        <activity
+            android:name=".user_details"
+            android:theme="@style/my_transport_3">
 
         </activity>
+        <activity
+            android:name=".sent_task"
+            android:theme="@style/my_transport"></activity>
 
-        <activity android:name=".user_details"
-            android:theme="@style/my_transport">
+        <activity
+            android:name=".received_task"
+            android:theme="@style/my_transport"></activity>
 
-        </activity>
+        <activity
+            android:name=".user_details_v1"
+            android:label="@string/title_activity_user_details_v1"
+            android:theme="@style/AppTheme.NoActionBar">
 
-        <activity android:name=".sent_task"
-            android:theme="@style/my_transport">
 
-        </activity>
-
-        <activity android:name=".received_task"
-            android:theme="@style/my_transport">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
         </activity>
     </application>
 
